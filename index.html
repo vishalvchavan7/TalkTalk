@@ -31,7 +31,7 @@ lpTag.sdes.push(
         "type": "ctmrinfo",  //MANDATORY
         "info": {
            "cstatus": "",  //CUSTOMER LIFECYCLE STATUS. FROM PRE-DEFINED LIST
-           "ctype": "FTTP",  //CUSTOMER TYPE OR TIER. FROM PRE-DEFINED LIST
+           "ctype": x,  //CUSTOMER TYPE OR TIER. FROM PRE-DEFINED LIST
            "customerId": "",  //UNIQUE CUSTOMER IDENTIFIER
            "balance": "",  //THE CUSTOMER FINANCIAL BALANCE IN DECIMAL VALUE
            "currency": "",  //CURRENCY CODE
@@ -107,6 +107,7 @@ lpTag.sdes.push(
 
     <script>
     function myFunction() {
+      let x = 'Select'
       var x = document.getElementById("mySelect").value;
       //document.getElementById("demo").innerHTML = "You selected: " + x;
     }

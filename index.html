@@ -21,12 +21,9 @@
 <script type="text/javascript">window.lpTag=window.lpTag||{},'undefined'==typeof window.lpTag._tagCount?(window.lpTag={wl:lpTag.wl||null,scp:lpTag.scp||null,site:'86607719'||'',section:lpTag.section||'',tagletSection:lpTag.tagletSection||null,autoStart:lpTag.autoStart!==!1,ovr:lpTag.ovr||{},_v:'1.10.0',_tagCount:1,protocol:'https:',events:{bind:function(t,e,i){lpTag.defer(function(){lpTag.events.bind(t,e,i)},0)},trigger:function(t,e,i){lpTag.defer(function(){lpTag.events.trigger(t,e,i)},1)}},defer:function(t,e){0===e?(this._defB=this._defB||[],this._defB.push(t)):1===e?(this._defT=this._defT||[],this._defT.push(t)):(this._defL=this._defL||[],this._defL.push(t))},load:function(t,e,i){var n=this;setTimeout(function(){n._load(t,e,i)},0)},_load:function(t,e,i){var n=t;t||(n=this.protocol+'//'+(this.ovr&&this.ovr.domain?this.ovr.domain:'lptag.liveperson.net')+'/tag/tag.js?site='+this.site);var o=document.createElement('script');o.setAttribute('charset',e?e:'UTF-8'),i&&o.setAttribute('id',i),o.setAttribute('src',n),document.getElementsByTagName('head').item(0).appendChild(o)},init:function(){this._timing=this._timing||{},this._timing.start=(new Date).getTime();var t=this;window.attachEvent?window.attachEvent('onload',function(){t._domReady('domReady')}):(window.addEventListener('DOMContentLoaded',function(){t._domReady('contReady')},!1),window.addEventListener('load',function(){t._domReady('domReady')},!1)),'undefined'===typeof window._lptStop&&this.load()},start:function(){this.autoStart=!0},_domReady:function(t){this.isDom||(this.isDom=!0,this.events.trigger('LPT','DOM_READY',{t:t})),this._timing[t]=(new Date).getTime()},vars:lpTag.vars||[],dbs:lpTag.dbs||[],ctn:lpTag.ctn||[],sdes:lpTag.sdes||[],hooks:lpTag.hooks||[],identities:lpTag.identities||[],ev:lpTag.ev||[]},lpTag.init()):window.lpTag._tagCount+=1;</script>
 <!-- END LivePerson Monitor.NEW -->
 
-    <!-- BEGIN LivePerson Monitor. -->
-<!--     <script type="text/javascript">window.lpTag=window.lpTag||{},'undefined'==typeof window.lpTag._tagCount?(window.lpTag={wl:lpTag.wl||null,scp:lpTag.scp||null,site:'9994318'||'',section:lpTag.section||'',tagletSection:lpTag.tagletSection||null,autoStart:lpTag.autoStart!==!1,ovr:lpTag.ovr||{},_v:'1.10.0',_tagCount:1,protocol:'https:',events:{bind:function(t,e,i){lpTag.defer(function(){lpTag.events.bind(t,e,i)},0)},trigger:function(t,e,i){lpTag.defer(function(){lpTag.events.trigger(t,e,i)},1)}},defer:function(t,e){0===e?(this._defB=this._defB||[],this._defB.push(t)):1===e?(this._defT=this._defT||[],this._defT.push(t)):(this._defL=this._defL||[],this._defL.push(t))},load:function(t,e,i){var n=this;setTimeout(function(){n._load(t,e,i)},0)},_load:function(t,e,i){var n=t;t||(n=this.protocol+'//'+(this.ovr&&this.ovr.domain?this.ovr.domain:'lptag.liveperson.net')+'/tag/tag.js?site='+this.site);var o=document.createElement('script');o.setAttribute('charset',e?e:'UTF-8'),i&&o.setAttribute('id',i),o.setAttribute('src',n),document.getElementsByTagName('head').item(0).appendChild(o)},init:function(){this._timing=this._timing||{},this._timing.start=(new Date).getTime();var t=this;window.attachEvent?window.attachEvent('onload',function(){t._domReady('domReady')}):(window.addEventListener('DOMContentLoaded',function(){t._domReady('contReady')},!1),window.addEventListener('load',function(){t._domReady('domReady')},!1)),'undefined'===typeof window._lptStop&&this.load()},start:function(){this.autoStart=!0},_domReady:function(t){this.isDom||(this.isDom=!0,this.events.trigger('LPT','DOM_READY',{t:t})),this._timing[t]=(new Date).getTime()},vars:lpTag.vars||[],dbs:lpTag.dbs||[],ctn:lpTag.ctn||[],sdes:lpTag.sdes||[],hooks:lpTag.hooks||[],identities:lpTag.identities||[],ev:lpTag.ev||[]},lpTag.init()):window.lpTag._tagCount+=1;</script> -->
-    <!-- END LivePerson Monitor. -->
 
     <!-- GetButton.io widget -->
-<script type="text/javascript">
+<!-- <script type="text/javascript">
   (function () {
       var options = {
           whatsapp: "+15164686357", // WhatsApp number
@@ -38,7 +35,7 @@
       s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
       var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
   })();
-</script>
+</script> -->
 <!-- /GetButton.io widget -->
 
     
@@ -60,8 +57,7 @@
 
               
   </header>
-  <!-- <div id="okta-login-container"> 
-  </div> -->
+
 
   <!--Shop-->>
   <section class="shop container">
@@ -77,64 +73,7 @@
       </div>
  
   </section>
-    <!-- use the Okta widget to power authentication! -->
 
-<!--     <script src="main.js"></script>
-
-
-
-    <script type="text/javascript">
-      var oktaSignIn = new OktaSignIn({
-        baseUrl: "https://dev-76949439.okta.com/",
-        clientId: "0oa46w72rdLVkk1ME5d7",
-        authParams: {
-          issuer: "https://dev-76949439.okta.com/oauth2/default",
-          responseType: ['token', 'id_token'],
-          display: 'page'
-        }
-      });
-
-      if (oktaSignIn.token.hasTokensInUrl()) {
-        oktaSignIn.token.parseTokensFromUrl(
-          // If we get here, the user just logged in.
-          function success(res) {
-            var accessToken = res[0];
-            var idToken = res[1];
-
-            oktaSignIn.tokenManager.add('accessToken', accessToken);
-            oktaSignIn.tokenManager.add('idToken', idToken);
-
-            window.location.hash='';
-            document.getElementById("messageBox").innerHTML = "Hello, " + idToken.claims.email + "! You just logged in! :)";
-          },
-          function error(err) {
-            console.error(err);
-          }
-        );
-      } else {
-        oktaSignIn.session.get(function (res) {
-          // If we get here, the user is already signed in.
-          if (res.status === 'ACTIVE') {
-            document.getElementById("messageBox").innerHTML = "Hello, " + res.login + "! You are *still* logged in! :)";
-            return;
-          }
-          oktaSignIn.renderEl(
-            { el: '#okta-login-container' },
-            function success(res) {},
-            function error(err) {
-              console.error(err);
-            }
-          );
-        });
-      }
-
-
-
-
-
-
-       -->
-// </script>
 <script>
     lpTag.sdes = lpTag.sdes||[];
       lpTag.sdes.push(

@@ -25,38 +25,7 @@
     
 <script>
 
-lpTag.sdes = lpTag.sdes||[];
-lpTag.sdes.push(
-   {
-        "type": "ctmrinfo",  //MANDATORY
-        "info": {
-           "cstatus": "",  //CUSTOMER LIFECYCLE STATUS. FROM PRE-DEFINED LIST
-           "ctype": x,  //CUSTOMER TYPE OR TIER. FROM PRE-DEFINED LIST
-           "customerId": "",  //UNIQUE CUSTOMER IDENTIFIER
-           "balance": "",  //THE CUSTOMER FINANCIAL BALANCE IN DECIMAL VALUE
-           "currency": "",  //CURRENCY CODE
-           "socialId": "",  //SOCIAL ID OF YOUR CHOICE: FACEBOOK, TWITTER ETC...
-           "imei": "",  //UNIQUE DEVICE OR PHONE IDENTIFIER
-           "userName": "",  //CONSUMER NICKNAME OR USERNAME
-           "companySize": '',  //COMPANY SIZE MEASURED BY NUMBER OF EMPLOYEES
-           "companyBranch": "",  //THE CUSTOMER'S COMPANY BRANCH NAME
-           "accountName": "",  //THE CUSTOMER'S COMPANY NAME
-           "role": "TestingTT",  //CONSUMER ROLE TITLE
-           "lastPaymentDate": {
-                 "day": "",  //THE DAY OF THE LAST PAYMENT NUMERIC VALUE
-                 "month": "",  //THE MONTH OF THE LAST PAYMENT NUMERIC VALUE
-                 "year": ""  //THE YEAR OF THE LAST PAYMENT NUMERIC VALUE
-           },
-           "registrationDate": {
-                 "day": "",  //THE DAY OF THE REGISTRATION NUMERIC VALUE
-                 "month": "",  //THE MONTH OF THE REGISTRATION NUMERIC VALUE
-                 "year": ""  //THE YEAR OF THE REGISTRATION NUMERIC VALUE
-           },
-           "storeNumber": "",  //STORE NUMBER
-           "storeZipCode": ""  //STORE ZIP CODE
-        }
-   }
-);
+
   
   
 </script>
@@ -108,8 +77,41 @@ lpTag.sdes.push(
     <script>
     function myFunction() {
       let x = 'Select'
-      var x = document.getElementById("mySelect").value;
+      let x = document.getElementById("mySelect").value;
       //document.getElementById("demo").innerHTML = "You selected: " + x;
+      
+      lpTag.sdes = lpTag.sdes||[];
+      lpTag.sdes.push(
+        {
+          "type": "ctmrinfo",  //MANDATORY
+           "info": {
+             "cstatus": "",  //CUSTOMER LIFECYCLE STATUS. FROM PRE-DEFINED LIST
+             "ctype": x,  //CUSTOMER TYPE OR TIER. FROM PRE-DEFINED LIST
+             "customerId": "",  //UNIQUE CUSTOMER IDENTIFIER
+             "balance": "",  //THE CUSTOMER FINANCIAL BALANCE IN DECIMAL VALUE
+             "currency": "",  //CURRENCY CODE
+             "socialId": "",  //SOCIAL ID OF YOUR CHOICE: FACEBOOK, TWITTER ETC...
+             "imei": "",  //UNIQUE DEVICE OR PHONE IDENTIFIER
+             "userName": "",  //CONSUMER NICKNAME OR USERNAME
+             "companySize": '',  //COMPANY SIZE MEASURED BY NUMBER OF EMPLOYEES
+             "companyBranch": "",  //THE CUSTOMER'S COMPANY BRANCH NAME
+             "accountName": "",  //THE CUSTOMER'S COMPANY NAME
+             "role": "TestingTT",  //CONSUMER ROLE TITLE
+             "lastPaymentDate": {
+               "day": "",  //THE DAY OF THE LAST PAYMENT NUMERIC VALUE
+               "month": "",  //THE MONTH OF THE LAST PAYMENT NUMERIC VALUE
+               "year": ""  //THE YEAR OF THE LAST PAYMENT NUMERIC VALUE
+             },
+             "registrationDate": {
+                 "day": "",  //THE DAY OF THE REGISTRATION NUMERIC VALUE
+                 "month": "",  //THE MONTH OF THE REGISTRATION NUMERIC VALUE
+                 "year": ""  //THE YEAR OF THE REGISTRATION NUMERIC VALUE
+           },
+           "storeNumber": "",  //STORE NUMBER
+           "storeZipCode": ""  //STORE ZIP CODE
+        }
+   }
+);
     }
     </script> 
         

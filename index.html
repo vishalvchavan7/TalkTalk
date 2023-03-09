@@ -63,7 +63,7 @@
 
 <!--      <p>Select a type of broadband from the list.</p> -->
 
-    <select id="mySelect" onchange="myFunction()">
+    <select id="mySelect" onchange="myFunctionSelect()">
       <option value="Select">Select</option>
       <option value="FTTP">FTTP</option>
       <option value="FTTC">FTTC</option>
@@ -75,7 +75,7 @@
     <p id="demo"></p>
 
     <script>
-    function myFunction() {
+    function myFunctionSelect() {
       let x = 'Select'
       let x = document.getElementById("mySelect").value;
       //document.getElementById("demo").innerHTML = "You selected: " + x;

@@ -13,7 +13,26 @@
     <script src="https://ok1static.oktacdn.com/assets/js/sdk/okta-signin-widget/2.16.0/js/okta-sign-in.min.js" type="text/javascript"></script>
     <link href="https://ok1static.oktacdn.com/assets/js/sdk/okta-signin-widget/2.16.0/css/okta-sign-in.min.css" type="text/css" rel="stylesheet"/>
     <link href="https://ok1static.oktacdn.com/assets/js/sdk/okta-signin-widget/2.16.0/css/okta-theme.css" type="text/css" rel="stylesheet"/>
+    
+    <p>Select a type of broadband from the list.</p>
 
+    <select id="mySelect" onchange="myFunction()">
+      <option value="FTTP">FTTP</option>
+      <option value="FTTC">FTTC</option>
+
+    </select>
+
+
+
+    <p id="demo"></p>
+
+    <script>
+    function myFunction() {
+      var x = document.getElementById("mySelect").value;
+      document.getElementById("demo").innerHTML = "You selected: " + x;
+    }
+    </script>
+    
 
     <title>TalkTalk Business</title> 
     

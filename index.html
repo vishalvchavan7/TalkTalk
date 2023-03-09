@@ -95,6 +95,7 @@ lpTag.sdes.push(
 <!--      <p>Select a type of broadband from the list.</p> -->
 
     <select id="mySelect" onchange="myFunction()">
+      <option value="Select">Select</option>
       <option value="FTTP">FTTP</option>
       <option value="FTTC">FTTC</option>
 
@@ -107,7 +108,7 @@ lpTag.sdes.push(
     <script>
     function myFunction() {
       var x = document.getElementById("mySelect").value;
-      document.getElementById("demo").innerHTML = "You selected: " + x;
+      //document.getElementById("demo").innerHTML = "You selected: " + x;
     }
     </script> 
         

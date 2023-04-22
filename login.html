@@ -130,7 +130,7 @@
             oktaSignIn.tokenManager.add('idToken', idToken);
 
             window.location.hash='';
-            document.getElementById("messageBox").innerHTML = "Hello, " + idToken.claims.email + "! You just logged in! :)";
+           // document.getElementById("messageBox").innerHTML = "Hello, " + idToken.claims.email + "! You just logged in! :)";
           },
           function error(err) {
             console.log(err);
@@ -140,7 +140,7 @@
         oktaSignIn.session.get(function (res) {
           // If we get here, the user is already signed in.
           if (res.status === 'ACTIVE') {
-            document.getElementById("messageBox").innerHTML = "Hello, " + res.login + "! You are *still* logged in! :)";
+          //  document.getElementById("messageBox").innerHTML = "Hello, " + res.login + "! You are *still* logged in! :)";
             return;
           }
           oktaSignIn.renderEl(

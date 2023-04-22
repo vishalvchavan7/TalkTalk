@@ -133,7 +133,7 @@
             document.getElementById("messageBox").innerHTML = "Hello, " + idToken.claims.email + "! You just logged in! :)";
           },
           function error(err) {
-            console.error(err);
+            console.log(err);
           }
         );
       } else {
@@ -147,7 +147,7 @@
             { el: '#okta-login-container' },
             function success(res) {},
             function error(err) {
-              console.error(err);
+              console.log(err);
             }
           );
         });
